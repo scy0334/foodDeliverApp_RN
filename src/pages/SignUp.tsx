@@ -170,7 +170,7 @@ function SignUp({navigation}: SignUpScreenProps) {
           disabled={!canGoNext || loading}
           onPress={onSubmit}>
           {loading ? (
-            <ActivityIndicator color="blue" />
+            <ActivityIndicator color="white" />
           ) : (
             <Text style={styles.loginButtonText}>회원가입</Text>
           )}
