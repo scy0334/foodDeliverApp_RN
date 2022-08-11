@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/blue-dot.png",
+      "sha1": "a797e3102ee2fe4b8bff5972d189356e2ac7dd9d"
+    },
+    {
+      "path": "src/assets/green-dot.png",
+      "sha1": "1a4f71735af82f93642633a80da1ca8cb8ec1653"
+    },
+    {
+      "path": "src/assets/red-dot.png",
+      "sha1": "fc4efc6df15f312c7190bd7f6a5fc557ddc46637"
+    }
+  ]
+}
