@@ -19,6 +19,9 @@ import Config from 'react-native-config';
 import orderSlice from './src/slices/order';
 import usePermissions from './src/hooks/usePermissions';
 import {NavigationContainer} from '@react-navigation/native';
+import SplashScreen from 'react-native-splash-screen';
+import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
+import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
 
 export type LoggedInParamList = {
   Orders: undefined;
@@ -48,7 +51,9 @@ function AppInner() {
     const getTokenAndRefresh = async () => {
       try {
         const token = await EncryptedStorage.getItem('refreshToken');
+        console.log(`DEBUG: token is ${token}`);
         if (!token) {
+          SplashScreen.hide();
           return;
         }
         const response = await axios.post(
@@ -71,9 +76,11 @@ function AppInner() {
         console.error(error);
         const errorResponse = (error as AxiosError).response;
         const axiosData = errorResponse?.data as AxiosErrorResponseData;
-        if (axiosData.code === 'expired') {
+        if (axiosData.code && axiosData.code === 'expired') {
           Alert.alert('알림', '다시 로그인 해주세요.');
         }
+      } finally {
+        SplashScreen.hide();
       }
     };
     getTokenAndRefresh();
@@ -113,7 +120,10 @@ function AppInner() {
           response: {status},
         } = error;
         if (status === 419) {
-          if (error.response.data.code === 'expired') {
+          if (
+            error.response.data.code &&
+            error.response.data.code === 'expired'
+          ) {
             const originalRequest = config;
             const refreshToken = await EncryptedStorage.getItem('refreshToken');
             // token refresh 요청
@@ -141,17 +151,27 @@ function AppInner() {
           <Tab.Screen
             name="Orders"
             component={Orders}
-            options={{title: '오더 목록'}}
+            options={{
+              title: '오더 목록',
+              tabBarIcon: () => <FontAwesome5Icon name="list" size={20} />,
+            }}
           />
           <Tab.Screen
             name="Delivery"
             component={Delivery}
-            options={{headerShown: false}}
+            options={{
+              headerShown: false,
+              title: '지도',
+              tabBarIcon: () => <FontAwesome5Icon name="map" size={20} />,
+            }}
           />
           <Tab.Screen
             name="Settings"
             component={Settings}
-            options={{title: '내 정보'}}
+            options={{
+              title: '내 정보',
+              tabBarIcon: () => <FontAwesomeIcon name="gear" size={20} />,
+            }}
           />
         </Tab.Navigator>
       ) : (

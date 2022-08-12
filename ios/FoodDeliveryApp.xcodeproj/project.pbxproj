@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* FoodDeliveryAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FoodDeliveryAppTests.m */; };
-		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		040C0017337B4BCDBD4F43E4 /* red-dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 3970F5D5B2B143A6BD7985C9 /* red-dot.png */; };
+		121167B87C4045AD97196291 /* blue-dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 943B93BE42BE44C2AC175ECD /* blue-dot.png */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		68003FB128A63255006D2A3C /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68003FAD28A63255006D2A3C /* FontAwesome5_Brands.ttf */; };
+		68003FB228A63255006D2A3C /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68003FAE28A63255006D2A3C /* FontAwesome5_Solid.ttf */; };
+		68003FB328A63255006D2A3C /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68003FAF28A63255006D2A3C /* FontAwesome5_Regular.ttf */; };
+		68003FB428A63255006D2A3C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68003FB028A63255006D2A3C /* FontAwesome.ttf */; };
 		683F48DF28A10C6300C4AE3F /* RCTTMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 683F48DE28A10C6300C4AE3F /* RCTTMap.m */; };
 		683F499728A10FDA00C4AE3F /* TopLib_Op.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 683F499628A10FDA00C4AE3F /* TopLib_Op.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8BDC27EE836A431E9F13F512 /* green-dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D69A04B139842F78B35841E /* green-dot.png */; };
 		A9805994CBF494B173DEB8AA /* libPods-FoodDeliveryApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 743AFA40B7BCFD7DB968234F /* libPods-FoodDeliveryApp.a */; };
 		EE0F136EEA6D1390DE723157 /* libPods-FoodDeliveryApp-FoodDeliveryAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA0D679C148F865652F6C7A /* libPods-FoodDeliveryApp-FoodDeliveryAppTests.a */; };
-		121167B87C4045AD97196291 /* blue-dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 943B93BE42BE44C2AC175ECD /* blue-dot.png */; };
-		8BDC27EE836A431E9F13F512 /* green-dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D69A04B139842F78B35841E /* green-dot.png */; };
-		040C0017337B4BCDBD4F43E4 /* red-dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 3970F5D5B2B143A6BD7985C9 /* red-dot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +41,16 @@
 		00E356F21AD99517003FC87E /* FoodDeliveryAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodDeliveryAppTests.m; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* FoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FoodDeliveryApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = FoodDeliveryApp/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FoodDeliveryApp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FoodDeliveryApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FoodDeliveryApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FoodDeliveryApp/main.m; sourceTree = "<group>"; };
 		1AA0D679C148F865652F6C7A /* libPods-FoodDeliveryApp-FoodDeliveryAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodDeliveryApp-FoodDeliveryAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3970F5D5B2B143A6BD7985C9 /* red-dot.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "red-dot.png"; path = "../src/assets/red-dot.png"; sourceTree = "<group>"; };
+		68003FAD28A63255006D2A3C /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		68003FAE28A63255006D2A3C /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		68003FAF28A63255006D2A3C /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		68003FB028A63255006D2A3C /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		683F48DD28A10C5600C4AE3F /* RCTTMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTTMap.h; sourceTree = "<group>"; };
 		683F48DE28A10C6300C4AE3F /* RCTTMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTTMap.m; sourceTree = "<group>"; };
 		683F48E028A10E1900C4AE3F /* FoodDeliveryApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodDeliveryApp-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -69,12 +78,11 @@
 		7907BA6A9367EEE80E6B900B /* Pods-FoodDeliveryApp-FoodDeliveryAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDeliveryApp-FoodDeliveryAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodDeliveryApp-FoodDeliveryAppTests/Pods-FoodDeliveryApp-FoodDeliveryAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FoodDeliveryApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82EEBA380DCFF63A226FD93F /* Pods-FoodDeliveryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDeliveryApp.debug.xcconfig"; path = "Target Support Files/Pods-FoodDeliveryApp/Pods-FoodDeliveryApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8D69A04B139842F78B35841E /* green-dot.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "green-dot.png"; path = "../src/assets/green-dot.png"; sourceTree = "<group>"; };
+		943B93BE42BE44C2AC175ECD /* blue-dot.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "blue-dot.png"; path = "../src/assets/blue-dot.png"; sourceTree = "<group>"; };
 		D82BC3227588217117835F7F /* Pods-FoodDeliveryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDeliveryApp.release.xcconfig"; path = "Target Support Files/Pods-FoodDeliveryApp/Pods-FoodDeliveryApp.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FA0582C14976E3EA5446D444 /* Pods-FoodDeliveryApp-FoodDeliveryAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDeliveryApp-FoodDeliveryAppTests.release.xcconfig"; path = "Target Support Files/Pods-FoodDeliveryApp-FoodDeliveryAppTests/Pods-FoodDeliveryApp-FoodDeliveryAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		943B93BE42BE44C2AC175ECD /* blue-dot.png */ = {isa = PBXFileReference; name = "blue-dot.png"; path = "../src/assets/blue-dot.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8D69A04B139842F78B35841E /* green-dot.png */ = {isa = PBXFileReference; name = "green-dot.png"; path = "../src/assets/green-dot.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3970F5D5B2B143A6BD7985C9 /* red-dot.png */ = {isa = PBXFileReference; name = "red-dot.png"; path = "../src/assets/red-dot.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
@@ -139,6 +147,17 @@
 				1AA0D679C148F865652F6C7A /* libPods-FoodDeliveryApp-FoodDeliveryAppTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68003FAB28A63205006D2A3C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				68003FB028A63255006D2A3C /* FontAwesome.ttf */,
+				68003FAD28A63255006D2A3C /* FontAwesome5_Brands.ttf */,
+				68003FAF28A63255006D2A3C /* FontAwesome5_Regular.ttf */,
+				68003FAE28A63255006D2A3C /* FontAwesome5_Solid.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		683F499828A1101800C4AE3F /* Headers */ = {
@@ -177,6 +196,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				68003FAB28A63205006D2A3C /* Fonts */,
 				683F499828A1101800C4AE3F /* Headers */,
 				683F499628A10FDA00C4AE3F /* TopLib_Op.a */,
 				13B07FAE1A68108700A75B9A /* FoodDeliveryApp */,
@@ -213,7 +233,7 @@
 			sourceTree = "<group>";
 		};
 		DB920FD4E4F5475BA6480204 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				943B93BE42BE44C2AC175ECD /* blue-dot.png */,
 				8D69A04B139842F78B35841E /* green-dot.png */,
@@ -221,7 +241,6 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -317,9 +336,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68003FB228A63255006D2A3C /* FontAwesome5_Solid.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				68003FB328A63255006D2A3C /* FontAwesome5_Regular.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				121167B87C4045AD97196291 /* blue-dot.png in Resources */,
+				68003FB428A63255006D2A3C /* FontAwesome.ttf in Resources */,
+				68003FB128A63255006D2A3C /* FontAwesome5_Brands.ttf in Resources */,
 				8BDC27EE836A431E9F13F512 /* green-dot.png in Resources */,
 				040C0017337B4BCDBD4F43E4 /* red-dot.png in Resources */,
 			);
@@ -491,7 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				683F48DF28A10C6300C4AE3F /* RCTTMap.m in Sources */,
-				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
