@@ -1,3 +1,4 @@
+import messaging from '@react-native-firebase/messaging';
 import SignIn from './src/pages/SignIn';
 import SignUp, {AxiosErrorResponseData} from './src/pages/SignUp';
 import Orders from './src/pages/Orders';
@@ -115,11 +116,12 @@ function AppInner() {
         return response;
       },
       async error => {
-        const {
-          config,
-          response: {status},
-        } = error;
-        if (status === 419) {
+        const {config} = error;
+        const response = error.response;
+
+        if (!response) return;
+        const status = response.status;
+        if (status && status === 419) {
           if (
             error.response.data.code &&
             error.response.data.code === 'expired'
@@ -142,6 +144,24 @@ function AppInner() {
         return Promise.reject(error);
       },
     );
+  }, [dispatch]);
+
+  // 토큰 설정
+  useEffect(() => {
+    async function getToken() {
+      try {
+        if (!messaging().isDeviceRegisteredForRemoteMessages) {
+          await messaging().registerDeviceForRemoteMessages();
+        }
+        const token = await messaging().getToken();
+        console.log('phone token', token);
+        dispatch(userSlice.actions.setPhoneToken(token));
+        return axios.post(`${Config.API_URL}/phonetoken`, {token});
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    getToken();
   }, [dispatch]);
 
   return (

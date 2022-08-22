@@ -44,7 +44,11 @@ function SignIn({navigation}: SignInScreenProps) {
         email,
         password,
       });
-      console.log(response.data);
+      if (response) {
+        console.log(response);
+      } else {
+        console.log(`DEBUG: no response`);
+      }
       Alert.alert('알림', '로그인 되었습니다.');
       dispatch(
         userSlice.actions.setUser({
@@ -61,6 +65,7 @@ function SignIn({navigation}: SignInScreenProps) {
       const errorResponse = (error as AxiosError).response;
       if (errorResponse) {
         const errorData = errorResponse.data as AxiosErrorResponseData;
+        if (!errorData) return;
         Alert.alert('알림', errorData.message);
       }
     } finally {
