@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Dimensions, Text, View, Alert} from 'react-native';
+import {Dimensions, Text, View, Alert, Platform} from 'react-native';
 import NaverMapView, {Marker, Path} from 'react-native-nmap';
 import {useSelector} from 'react-redux';
 import {RootState} from '../store/reducer';
@@ -18,8 +18,12 @@ function Ing({navigation}: IngScreenProps) {
   } | null>(null);
 
   useEffect(() => {
+    if (Platform.OS === 'ios') {
+      Geolocation.requestAuthorization();
+    }
     Geolocation.getCurrentPosition(
       info => {
+        console.log(`DEBUG: current location is ${info}`);
         setMyPosition({
           latitude: info.coords.latitude,
           longitude: info.coords.longitude,
@@ -27,8 +31,9 @@ function Ing({navigation}: IngScreenProps) {
       },
       console.error,
       {
-        enableHighAccuracy: true,
-        timeout: 20000,
+        enableHighAccuracy: false,
+        timeout: 4000,
+        maximumAge: 3600000,
       },
     );
   }, []);

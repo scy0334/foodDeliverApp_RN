@@ -112,7 +112,7 @@ function Complete() {
       navigation.navigate('Settings');
       dispatch(orderSlice.actions.rejectOrder(orderId));
     } catch (error) {
-      const errorResponse = (error as AxiosError<{message: string}>).response;
+      const errorResponse = (error as AxiosError).response;
       if (errorResponse) {
         Alert.alert('알림', errorResponse.data.message);
       }

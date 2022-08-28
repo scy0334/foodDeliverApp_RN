@@ -13,7 +13,7 @@ import useSocket from './src/hooks/useSocket';
 import {useEffect} from 'react';
 import EncryptedStorage from 'react-native-encrypted-storage';
 import axios, {AxiosError} from 'axios';
-import {Alert} from 'react-native';
+import {Alert, Platform} from 'react-native';
 import userSlice from './src/slices/user';
 import {useAppDispatch} from './src/store';
 import Config from 'react-native-config';
@@ -57,6 +57,7 @@ function AppInner() {
           SplashScreen.hide();
           return;
         }
+
         const response = await axios.post(
           `${Config.API_URL}/refreshToken`,
           {},

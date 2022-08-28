@@ -36,7 +36,11 @@ function EachOrder({item}: {item: Order}) {
       await axios.post(
         `${Config.API_URL}/accept`,
         {orderId: item.orderId},
-        {headers: {authorization: `Bearer ${accessToken}`}},
+        {
+          headers: {
+            authorization: `Bearer ${accessToken}`,
+          },
+        },
       );
       dispatch(orderSlice.actions.acceptOrder(item.orderId));
       setLoading(false);

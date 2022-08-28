@@ -71,8 +71,14 @@ function SignUp({navigation}: SignUpScreenProps) {
         name,
         password,
       });
+
+      // const res = await fetch(`${Config.API_URL}/user`, {
+      //   method: 'POST',
+      //   body: JSON.stringify({email, name, password}),
+      // });
+      // const response = res.json();
       console.log(`DEBUG: api url is ${Config.API_URL}`);
-      console.log(response);
+      console.log(`DEBUG: response is ${response}`);
       Alert.alert('알림', '회원가입 되었습니다.');
       navigation.navigate('SignIn');
     } catch (error) {
